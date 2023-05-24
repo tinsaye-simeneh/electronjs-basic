@@ -7,16 +7,20 @@
     <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
-    <h1>First Electron.js App</h1>
-    <p>Current theme source: <strong id="theme-source">dark</strong></p>
-
-    <button id="toggle-dark-mode">Toggle Dark Mode</button>
-    <button id="reset-to-system">Reset to System Theme</button>
-    <input type="text" id="theme-source-input" placeholder="Enter theme source" />
-    <button id="set-theme-source">Set Theme Source</button>
-
+    <h1> Note app</h1>
+    <p>
+        <label for="note">Enter note</label>
+        <input type="text" id="note" name="note" placeholder="Enter note">
+    </p>
+    <p>
+        <button id="addNote">Add note</button>
+    </p>
+    <p>
+        <button id="clearNotes">Clear notes</button>
+    </p>
+    <ul id="notes"></ul>
+    <script src="renderer.js"></script>
   </body>
   
-    <script src="renderer.js"></script>
 </body>
 </html>
